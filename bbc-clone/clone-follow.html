@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BBC Clone-follow</title>
+        <link rel="stylesheet" type="text/css" href="style/reset.css">
+        <style>
+            #topbar {
+                width: 1000px;
+                margin: 0px auto;
+                height: 40px;
+            }
+            #logo {
+                margin-top: 8px;
+                width: 100px;
+                float: left;
+                margin-right: 8px;
+            }
+            .topbar-section {
+                float: left;
+                border-left: 1px #CCCCCC solid;
+                height: 100%;
+            }
+            #signin-image {
+                width: 25px;
+                margin: 10px 15px;
+                float: left;
+            }
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            #signin-text {
+                font-weight: bold;
+                font-size: 90%;
+                position: relative;
+                top: 14px;
+                padding-right: 50px;
+            }
+            #wiggly-line {
+                float: left;
+                height: 40px;
+            }
+            #bell {
+                height: 25px;
+                margin: 9px 8px;
+                float: left;
+            }
+            .topbar-menu {
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0px;
+                height: 27px;
+            }
+            #more-arrow {
+                margin-left: 15px;
+                float: right;
+            }
+            #searchbox {
+                background-color: #e4e4e4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 5px;
+                margin: 5px 0px 5px 5px;
+                float: left;
+            }
+            #magnifying-glass {
+                height: 26px;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topbar">
+            <img id="logo" src="images/bbc-top-left.png">
+            <div id="signin-div" class="topbar-section">
+                <img id="signin-image" src="images/user-icon.png">
+                <span id="signin-text">Sign in</span>
+            </div>
+            <div id="bell-div">
+                <img id="wiggly-line" src="images/wiggly.png">
+                <img id="bell" src="images/bell.png">
+            </div>
+            <div class="topbar-section topbar-menu">
+                News
+            </div>
+            <div class="topbar-section topbar-menu">
+                Sport
+            </div>
+            <div class="topbar-section topbar-menu">
+                Weather
+            </div>
+            <div class="topbar-section topbar-menu">
+                iPlayer
+            </div>
+            <div class="topbar-section topbar-menu">
+                TV
+            </div>
+            <div class="topbar-section topbar-menu">
+                More
+                <img id="more-arrow" src="images/moreArrow.png">
+            </div>
+            <div class="topbar-section">
+                <input id="searchbox" type="text" value="search">
+                <input type="image" id="magnifying-glass" src="images/searchGlass.png">
+            </div>
+        </div>
+    </body>
+</html>
