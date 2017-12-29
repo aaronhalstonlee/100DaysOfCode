@@ -41,7 +41,7 @@
             }
             #bell {
                 height: 25px;
-                margin: 9px 8px;
+                margin: 9px 8px 0 8px;
                 float: left;
             }
             .topbar-menu {
@@ -71,13 +71,14 @@
                 clear: both;
             }
             #menu-bar-container {
+                border-top: 1px solid #CCCCCC;
                 background-color: #bb1919;
                 width: 100%;
                 height: 70px;
             }
             #menu-bar {
                 width: 1000px;
-                margin: auto;
+                margin:0 auto;
             }
             h1 {
                 padding: 0px;
@@ -85,6 +86,57 @@
                 color: white;
                 font-size: 40px;
                 padding-top: 10px;
+                font-weight: normal;
+                float: left;
+            }
+            #find-local-news {
+                float: right;
+                border: 1px #bb4545 solid;
+                width: 250px;
+                padding: 5px 5px 0px 10px;
+                margin: 5px 10px 0 0;
+            }
+            #find-local-news a {
+                color: white;
+                text-decoration: none;
+                font-size: 30px;
+                position: relative;
+                top: -6px;
+            }
+            #find-local-news a:hover {
+                text-decoration: underline;
+            }
+            #find-local-news img {
+                height: 40px;
+            }
+            #menu-bar-2-container {
+                background-color: #a91717;
+                width: 100%;
+            }
+            #menu-bar-2 {
+                width: 1000px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            #menu-bar-2 a {
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px solid #bb4545;
+                font-size: 14px;
+                position: relative;
+                top: 10px;
+            }
+            #menu-bar-2 a:hover {
+                text-decoration: underline;
+            }
+            .no-border {
+                border: none !important;
+            }
+            #down-arrow {
+                height: 15px;
+                position: relative;
+                top: 13px;
             }
         </style>
     </head>
@@ -126,6 +178,28 @@
             <div id="menu-bar-container">
                 <div id="menu-bar">
                     <h1>NEWS</h1>
+                    <div id="find-local-news">
+                        <a href="">Find local news</a>
+                        <img src="images/pin.png">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="menu-bar-2-container">
+                    <div id="menu-bar-2">
+                        <a href="">Home</a>
+                        <a href="">UK</a>
+                        <a href="">World</a>
+                        <a href="">Business</a>
+                        <a href="">Politics</a>
+                        <a href="">Tech</a>
+                        <a href="">Science</a>
+                        <a href="">Health</a>
+                        <a href="">Education</a>
+                        <a href="">Entertainment & Arts</a>
+                        <a href="">Video & Audio</a>
+                        <a href="" class="no-border">More</a>
+                        <img id="down-arrow" src="images/down-arrow.png">
+                    </div>
                 </div>
             </div>
         </div>
