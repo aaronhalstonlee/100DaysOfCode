@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+        <style type="text/css">
+            .bold {
+                font-weight: bold;
+            }
+            .italic {
+                font-style: italic;
+            }
+            .underline {
+                text-decoration: underline;
+            }
+            a {
+                text-decoration: none; /*stops default underlining of links*/
+            }
+            a:hover {
+                text-decoration: underline;
+                color: green;
+                text-transform: uppercase;
+            }
+            .big {
+                font-size: 200%;
+            }
+            .big:hover {
+                font-family: 'Shadows Into Light', cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="bold">this is bold</p>
+        <p class="italic">ths is italic. <span class="bold">This is both bold and italic</span></p><!--this <span> is both bold and italic becuase it is already nested in the <p> with class italic. -->
+        <p class="underline">this is underlined</p>
+        <a href="#">link</a>
+        <p class="big">this is a big p-tag</p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <style type="text/css">
+          a {
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+          a:visited {
+            color: green;
+          }
+          a:link {
+            color: yellow;
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p><a href="http://www.google.com">Google.com</a></p><!-- without http in the link href the browser will think google.com is a relative link and error -->
+            <p><a href="http://www.google.com" target="_blank">Google.com</a></p>
+        </div>
+    </body>
+</html>

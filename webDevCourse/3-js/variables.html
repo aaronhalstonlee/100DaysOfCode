@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+
+
+<body>
+	<input id="input" type="text" name="text">
+	<button id="change">change text</button>
+	<p id="para">put your text here!</p>
+	
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		document.getElementById('change').onclick = function(){
+			var textEntered = '';
+
+			textEntered = document.getElementById('input').value;
+
+			document.getElementById('para').innerHTML = textEntered;
+		}
+	</script>
+</body>
+</html>

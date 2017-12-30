@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		div {
+			float: left;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			text-align: center;
+			margin-left: 25px;
+		}
+		#red {
+			background-color: red;
+		}
+		#blue {
+			background-color: blue;
+		}
+		#yellow {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="red"></div>
+	<div id="blue"></div>
+	<div id="yellow"></div>
+
+	<script type="text/javascript">
+		var red = document.getElementById('red');
+		var blue = document.getElementById('blue');
+		var yellow = document.getElementById('yellow');
+
+		red.onclick = function(){
+			red.style.display="none";
+		}
+
+		blue.onclick = function(){
+			blue.style.display="none";
+		}
+
+		yellow.onclick = function(){
+			yellow.style.display="none";
+		}
+
+	</script>
+</body>
+</html>

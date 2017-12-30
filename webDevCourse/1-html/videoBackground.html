@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Hello Pancakes!</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <style type="text/css">
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            .content {
+                position: relative;
+                bottom: 0;
+                background: rgba(0,0,0,0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+            #myBtn {
+                width: 100px;
+                font-size: 18px;
+                padding: 1px;
+                border: none;
+                background: #111;
+                color: #fff;
+                cursor: pointer;
+            }
+            #myBtn:hover {
+                background: #ddd;
+                color: black;
+            }
+            #space {
+                padding: 300px;
+            }
+            header {
+                padding: 200px;
+            }
+            a {
+                color: white;
+            }
+            a:hover {
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="pancakes.mp4" type="video/mp4">
+        </video>
+
+        <div class="content" id="top">
+            <h1>Crempog! Dosa! Skonsa! Cachapas!</h1>
+            <p>arou-und the world, a-round the wor-orld</p>
+            
+            <button id="myBtn" onclick="myFunction()">pause</button>
+            
+            <hr>
+            <ul>
+                <li><a href="#injera">Injera</a></li>
+                <li><a href="#pannekoek">Pannekoek</a></li>
+                <li><a href="#india">India</a></li>
+                <li><a href="#nepal">Chataamari</a></li>
+                <li><a href="#germany">Pfannkucken</a></li>
+            </ul>
+            <ol>
+                <li>
+                    <H3 id="pancake">Pancake</H3>
+                    <p>Good ol' US of A breakfast food, right here. The mother-@#&!ing pancake. Feast your eyes and mouth on this.</p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="https://www.thechunkychef.com/wp-content/uploads/2015/06/20150328_104220-1.jpg" width="500px"></a></p>
+                    <a href="#top">Back to top</a>
+                </li>
+                <li>
+                    <H3 id="injera">Injera</H3>
+                    <p>The injera hails from Africa, specifically Eritrea and Ethiopia. A spongey flatbread used as a dish, utensil and food.</p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/LahohS.jpg/220px-LahohS.jpg" width="500px"></a></p>
+                    <a href="#top">Back to top</a>
+                </li>
+                <li>
+                    <H3 id="pannekoek">Pannekoek</H3>
+                    <p>The pannekoek hails from South Africa, traditionally eaten on cold and wet days.</p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="https://mobserver.co.za/wp-content/uploads/sites/92/2016/07/d0a8e7e69da2c3e03892631a28ae2b52.jpg" width="500px"></a></p>
+                    <a href="#top">Back to top</a>
+                </li>
+                <li>
+                    <H3 id="india">Dosa, Uttapam, Appam and more!</H3>
+                    <p>India wins with the most variations of the pancake. The Dosa, appam, neer dosa and uttapam are made with fermented rice batter and black lentils. Yum? But wait! There's more! Besan ka cheela, Thalipeeth, Malpua, and Pesarattu!</p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Masala_Dosa_as_served_in_Tamil_Nadu%2CIndia.JPG/270px-Masala_Dosa_as_served_in_Tamil_Nadu%2CIndia.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Indian_Pancake.jpg/270px-Indian_Pancake.jpg" width="500px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Appam_Salem.jpg/320px-Appam_Salem.jpg"></a></p>
+                    <a href="#top">Back to top</a>
+                </li>
+                <li>
+                    <H3 id="nepal">Chataamari</H3>
+                    <p>Here's on I'm particularly interested in: chataamari. In Nepal, the Newar make a rice pancake with eggs or meat on top. It has been dubbed the Newari Pizza, being it resembles an American pizza. <sup>I'll take two, please</sup></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="https://i.ytimg.com/vi/h0rXQI7xS5A/maxresdefault.jpg" width="500px"></a></p>
+                    <a href="#top">Back to top</a>
+                </li>
+                <li>
+                    <H3 id="germany">Pfannkuchen</H3>
+                    <p><em>Pfanne</em> meaning "pan" and <em>Kuchen</em> meaning cake, is pretty similar to our own pancake but can be savory, and... well, it has a much better name: <strong>Pfannkuchen!!!</strong></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Pancake"><img src="http://images.lecker.de/,id=78a315a6,b=lecker,w=610,cg=c.jpg" width="500px"></a></p>
+                </li>
+            </ol>
+            <a href="#top">Back to top</a>
+
+            <h3>Which one would you like to try?</h3>
+            <form>
+                <select>
+                    <option value="pancake">Pancake</option>
+                    <option value="injera">Injera</option>
+                    <option value="pannekoek">Pannekoek</option>
+                    <option value="india">The ones from India</option>
+                    <option value="chataamari">Chataamari</option>
+                    <option value="pfannkuchen">Pfannkuchen</option>
+                </select>
+                <h3>Now, what's your dream pancake?</h3>
+                <input type="text" name="pancake" placeholder="pancake type">
+                <input type="text" name="topping" placeholder="topping of choice">
+                <p><input type="submit" value="submit"></p>
+            </form>
+            <a href="#top">Back to top</a>
+        </div>
+        <script type="text/javascript">
+            var video = document.getElementById('myVideo');
+            var btn = document.getElementById('myBtn');
+
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = 'pause';
+                } else {
+                    video.pause();
+                    btn.innerHTML = 'play';
+                }
+            }
+        </script>
+    </body>
+</html>

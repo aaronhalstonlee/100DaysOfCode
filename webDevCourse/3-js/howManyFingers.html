@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+
+
+<body>
+
+	<p>How many fingers am I holding up?</p>
+	<input id="userInput" type="text">
+	<button id="checker">guess</button>
+	<p>tries left: </p>
+	<p id="tries"></p>
+	<p id="blank"></p>
+	
+	<script type="text/javascript">
+		var fingers = Math.floor((Math.random()*6));
+		var button = document.getElementById('checker');
+		var blank = document.getElementById('blank');
+		var count = 0;
+		var tries = document.getElementById('tries');
+
+		button.onclick = function(){
+
+			var userInput = document.getElementById('userInput').value;
+
+			if (userInput == fingers){
+				alert("you win!");
+			} else {
+				alert("try again");
+			}
+
+		}
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

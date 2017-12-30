@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <style type="text/css">
+
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+                v2.0 | 20110126
+                License: none (public domain)
+            */
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            #first-section {
+                background-color: #3c470f;
+                width: 200px;
+                
+            }
+            #second-section {
+                background-color: #819FF7;
+                width: 200px;
+                padding-top: 5px;
+                padding-bottom: 30px;
+                padding-left: 14px;
+                /*NOTE: total width includes padding + width (in this case 214px); */
+        </style>
+    </head>
+    <body>
+        <div id="first-section">
+            <p>this is internal style</p>
+            <h1>CSS is cool</h1>
+        </div>
+        <div id="second-section">
+            <p>this is some other styling</p>
+            <p>some sort of styling. <span>And this is underlined</span>.</p>
+        </div>
+        <p>This is not floated</p>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <style type="text/css">
+            #first-section {
+                background-color: #819FF7;
+                width: 200px;
+                position: fixed /*same as absolute, but keeps it fixed at top of page while the rest of the page scrolls*/;
+                left: 90px;
+                top: 100px;
+                z-index: 3;/*layers*/
+                opacity: 0.4;
+            }
+            #second-section {
+                background-color: #3c470f;
+                width: 200px;
+                position: relative;/* move element relative to where it would otherwise be on the page */
+                left: 100px;
+                bottom: 40px;
+                height: 4000px;
+                z-index: 2;
+            }
+            #third-section {
+                background-color: #AAAAAA;
+                width: 200px;
+                position: absolute;/*takes the elem out of the flow of the page to move it around relative to top left of the page*/
+                left: 500px;
+                top: 200px;
+            }
+            #fouth-section {
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first-section">
+            <p>this is internal style</p>
+            <h1>CSS is cool</h1>
+        </div>
+        <div id="second-section">
+            <p>this is some other styling</p>
+            <p>some sort of styling. <span>And this is underlined</span>.</p>
+        </div>
+        <p>This is not floated</p>
+        <div id="third-section">
+            <p>this is some other styling</p>
+            <p>some sort of styling. <span>And this is underlined</span>.</p>
+        </div>
+        <div class="big"></div>
+        <div id="fourth-section">
+            <p>this is some other styling</p>
+            <p>some sort of styling. <span>And this is underlined</span>.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <style type="text/css">
+            .square {
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+            #red {
+                background-color: red;
+                border: 5px black double;
+            }
+            #blue {
+                background-color: blue;
+                border-style: ridge solid dotted dashed;/*default 3px, black*/
+                border-color: yellow green black red;
+                border-width: 10px 5px 2px 1px;
+            }
+            #green {
+                background-color: green;
+                border-radius: 50%; /*to make a circle: set radius to 1/2 the size of the elem or set to 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="red" class="square"></div>
+        <div id="blue" class="square"></div>
+        <div id="green" class="square"></div>
+
+    </body>
+</html>

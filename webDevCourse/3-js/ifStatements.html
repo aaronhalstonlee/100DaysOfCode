@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+
+
+<body>
+
+	<p>What is the magic word?</p>
+	<input id="input" type="text">
+	<button id="wordChecker">check</button>
+	
+	<script type="text/javascript">
+		var magicWord = "please";
+
+		document.getElementById('wordChecker').onclick = function(){
+			var userInput = document.getElementById('input').value;
+			if (magicWord.toLowerCase() === userInput.toLowerCase()){
+				alert("you guessed it!");
+			} else {
+				alert("ah, ah, ah, ah, you didn't say the magic word");
+			}
+		}
+
+
+
+
+
+
+	</script>
+</body>
+</html>

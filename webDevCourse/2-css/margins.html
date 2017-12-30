@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time for style!</title>
+        <style type="text/css">
+            #first-section {
+                background-color: #3c470f;
+                width: 200px;
+                margin: 100px 50px 20px 100px;/*top right bottom left*/
+                /*use margins wehen you want the elem to remain in the flow of the page and to spread everything out relative to it
+                */
+                /*use postitioning if you want to take your elem out of the flow and move it around on top of other elem
+                */
+            }
+            #second-section {
+                background-color: #819FF7;
+                width: 200px;
+                margin: 50px 20px;
+                /* OR--- 
+                margin: 50px 20px 50px 20px;
+                   OR---
+                margin-top...
+                margin-bottom...
+                margin-right...
+                margin-left...
+                */
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first-section">
+            <p>this is internal style</p>
+            <h1>CSS is cool</h1>
+        </div>
+        <div id="second-section">
+            <p>this is some other styling</p>
+            <p>some sort of styling. <span>And this is underlined</span>.</p>
+        </div>
+        <p>This is not floated</p>
+    </body>
+</html>
