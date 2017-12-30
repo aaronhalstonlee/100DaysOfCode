@@ -169,7 +169,7 @@
                 top: 3px;
             }
 
-            #article-summary a {
+            #topic-link {
                 text-decoration: none;
                 color: #a91717;
                 border-left: 1px solid #CCCCCC;
@@ -186,10 +186,20 @@
             #article-container {
                 float: left;
                 width: 750px;
+                border-right: 1px solid #CCCCCC;
+                padding-right: 20px;
             }
             #main-article-image {
                 width: 400;
                 margin-left: 20px;
+            }
+            #article-hr {
+                border-top: 1px solid #a91717;
+                width: 50px;
+            }
+            .article-link {
+                text-decoration: none;
+                color: black;
             }
         </style>
     </head>
@@ -262,7 +272,10 @@
                             <h3><a href="">Asda bug exposed payment details</a></h3>
                             <div id="article-summary">
                                 <p>Securtiy vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
-                                <p><img src="images/clock.png"><span id="date">19 January 2016</span><a href="">Technology</a></p>
+                                <p><img src="images/clock.png"><span id="date">19 January 2016</span><a id="topic-link" href="">Technology</a></p>
+                                <hr id="article-hr" align="left">
+                                <p><a class="article-link" href="">The year's biggest tech stories</a></p>
+                                <p><a class="article-link" href="">Is Apple getting sloppy?</a></p>
                             </div>
                             <img id="main-article-image" src="images/article-pic.png">
                         </div>
