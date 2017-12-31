@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+
+
+<body>
+
+	<div id="tweets">
+		
+	</div>
+	
+	
+	<script type="text/javascript">
+
+		var tweets = ["hi everyone", "i love cornflakes", "night, night ;)"];
+		var tweetString = "";
+		
+		//while loop
+		var i=0;
+
+		while(i<tweets.length){
+			tweetString += "<p>" + tweets[i] + "</p>"
+			i++;
+		}
+		
+
+		//for loop
+
+		//for (var i=0;i<tweets.length;i++){
+		//	tweetString += "<p>" + tweets[i] + "</p>"	
+		//}	
+
+		document.getElementById('tweets').innerHTML = tweetString;
+
+
+
+
+
+
+	</script>
+</body>
+</html>
