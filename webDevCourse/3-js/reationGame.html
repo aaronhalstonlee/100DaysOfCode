@@ -3,17 +3,89 @@
 <head>
 	<title>js</title>
 	<style type="text/css">
-		
+		#container {
+			border: 1px solid black;
+			width: 610px;
+			height: 610px;
+			padding: 20px;
+		}
+
+		.target {
+			width: 200px;
+			height: 200px;
+			display: none;
+			background-color: blue;
+		}
 	</style>
 </head>
 
 
 <body>
 
-
+	<div id="container">
+		<div class="target" id="one"></div>
+		
+	</div>
+	<button id="play">play</button><button id="reset">reset</button>
+	<p>time: </p>
 	
 	<script type="text/javascript">
+		var ids = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+		var shape = ["border-radius: 0%;", "border-radius: 50%", "border-radius: 0%;", "border-radius: 50%"];
+		var color = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "gray", "black"];
+		var playing = false;
+		var count = 0;
+
+		//random shape picker
+		function randomShape(){
+			var ind = Math.floor(Math.random() * 4);
+			return shape[ind];
+		}
+		//random id picker
+		function randomId(){
+			var ind = Math.floor(Math.random() * 9);
+			return ids[ind];
+		}
+		//random color picker
+		function randomColor(){
+			var ind = Math.floor(Math.random() * 9)
+			return color[ind];
+		}
+		//random top position
+		function randomTop(){
+			return Math.floor(Math.random() * 400);
+		}
+		//random left position
+		function randomLeft(){
+			return Math.floor(Math.random() * 400);
+		}
+
+		function reset(){
+			count = 0;
+			document.getElementById('one').style = "display: none;";
+			alert('click the shapes!')
+		}
+		//start with blank screen
+		document.getElementById('one').style = "display: none;";
+		//reset button
+		document.getElementById('reset').onclick = function(){
+			reset();
+		}
+		//play button
+		document.getElementById('play').onclick = function(){
+			alert('click the shapes!');
+			if (!playing){
+				document.getElementById('one').setAttribute("style", `display: inline-block; ${randomShape()}; background-color: ${randomColor()}; position: relative; top: ${randomTop()}px; left: ${randomLeft()}px;`);
+				playing = true;
+			}
+		}
+
+		document.getElementById('one').onclick = function(){
+			document.getElementById('one').style = "display: none;";
 		
+			document.getElementById('one').setAttribute("style", `display: inline-block; ${randomShape()}; background-color: ${randomColor()}; position: relative; top: ${randomTop()}px; left: ${randomLeft()}px;`);
+			count++
+		}
 
 
 
