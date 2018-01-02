@@ -1,0 +1,13 @@
+#container {
+	border: 1px solid black;
+	width: 610px;
+	height: 610px;
+	padding: 20px;
+}
+
+.target {
+	width: 200px;
+	height: 200px;
+	display: none;
+	background-color: blue;
+}
