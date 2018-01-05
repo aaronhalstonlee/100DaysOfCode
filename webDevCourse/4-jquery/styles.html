@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	
+
+    <style type="text/css">
+    
+        div {
+            height: 200px;
+			width: 200px;
+            margin: 10px;
+        }
+		#circle {
+			border-radius: 50%;
+			background-color: green;
+		}
+
+        .square {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    
+    
+    <script type="text/javascript">
+	    
+        $('div').click(function(){
+            if ($(this).attr("id")){
+                alert($(this).attr("id"));
+            } else {
+                alert($(this).attr("class"));
+            }
+        });
+
+
+
+
+	</script>
+</body>
+</html>

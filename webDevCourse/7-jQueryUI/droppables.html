@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    
+	
+
+    <style type="text/css">
+        #dragme {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        #container {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+	</style>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="dragme"><span>wooo!</span></div>
+
+
+    <script type="text/javascript">
+        $(function(){
+            $('#dragme').draggable();
+            $('#container').droppable({
+                drop: function(event, ui){
+                    alert("you dropped something!") //console.log(event) gives you some more info on what is going on
+                }
+            });
+        });
+                
+
+
+
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

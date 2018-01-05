@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		div {
+			height: 200px;
+			width: 200px;
+		}
+
+		#green-circle {
+			border-radius: 50%;
+			background-color: green;
+		}
+
+		.red-square {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<p><div id="green-circle"></div></p>
+	<p><div class="red-square"></div></p>
+	<p><div class="red-square"></div></p>
+
+
+	<script type="text/javascript">
+
+		$('.red-square').click(function(){
+			alert('ow!')
+		})
+
+
+
+
+	</script>
+</body>
+</html>
