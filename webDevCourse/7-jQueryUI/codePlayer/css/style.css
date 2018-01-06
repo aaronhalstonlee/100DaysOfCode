@@ -1,0 +1,63 @@
+#topbar {
+    height: 60px;
+    width: 501px;
+    background-color: rgb(204, 204, 204);
+    float: left;
+
+}
+#topbar-title {
+    width: 50%;
+    float: left;
+}
+#topbar-title p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 220%;
+    position: relative;
+    bottom: 27px;
+    
+}
+#buttons {
+    background-color: rgb(204, 204, 204);
+    height: 60px;
+    width: 501px;
+    float: left;
+    position: relative;
+}
+
+button {
+    position: relative;
+    top: 17px;
+    float: right;
+    font-size: 110%;
+}
+
+.clear-float {
+    clear: both;
+}
+.display {
+    width: 250px;
+    height: 700px;
+    float: left;
+    overflow: scroll;
+}
+#hidden-p {
+    display: none;
+}
+
+#html {
+    background-color: lightgray;
+}
+
+#css {
+    background-color: lightblue;
+}
+
+#js {
+    background-color: lightcyan;
+}
+#border {
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+}
