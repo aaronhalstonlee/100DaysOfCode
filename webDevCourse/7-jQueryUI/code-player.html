@@ -11,6 +11,7 @@
     <style type="text/css">
         #topbar {
             height: 60px;
+            width: 500px;
             background-color: rgb(204, 204, 204);
             float: left;
 
@@ -22,15 +23,37 @@
         #topbar-title p {
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 150%;
-            float: left;
-            width: 50%;
+            font-size: 220%;
+            position: relative;
+            bottom: 27px;
+            
         }
         #buttons {
             background-color: rgb(204, 204, 204);
             height: 60px;
-            width: 50%;
+            width: 500px;
+            float: left;
+            position: relative;
+        }
+        
+        button {
+            position: relative;
+            top: 17px;
             float: right;
+            font-size: 110%;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+        .display {
+            width: 250px;
+            height: 700px;
+            background-color: lightgray;
+            float: left;
+        }
+        #hidden-p {
+            display: none;
         }
 	</style>
 </head>
@@ -41,21 +64,91 @@
         </div>
     </div>
     <div id="buttons">
-        <button>html</button>
-        <button>html</button>
-        <button>html</button>
-        <button>html</button>
+        <button id="html-button">html</button>
+        <button id="css-button">css</button>
+        <button id="js-button">javascript</button>
+        <button id="output-button">output</button>
     </div>
-    <div id="html"></div>
-    <div id="css"></div>
-    <div id="js"></div>
-    <div id="output"></div>
-
+    <div class="clear-float"></div>
+    <div class="display" id="html"></div>
+    <div class="display" id="css"></div>
+    <div class="display" id="js"></div>
+    <div class="display" id="output"></div>
+    <p id="hidden-p">hey! get back to coding!</p>
+    
 
 
     <script type="text/javascript">
-    
-                
+        var panels = 4;
+        //html button/panel interaction
+        $('#html-button').click(function(){
+            if ($('#html').is(':visible')){
+                $('#html').hide();
+                $('#html-button').css({'color': 'gray', 'text-decoration':'line-through'});
+                panels--;
+            } else if (!($('#html').is(':visible'))){
+                $('#html').show();
+                $('#html-button').css({'color': 'black', 'text-decoration':'none'});
+                panels++;
+                $('#hidden-p').hide();
+            }
+            $('.display').width(Math.floor(1000/panels));
+            if (panels < 1){
+                $('#hidden-p').show();
+            }
+        });
+
+        //css button/panel interaction
+        $('#css-button').click(function(){
+            if ($('#css').is(':visible')){
+                $('#css').hide();
+                panels--;
+            } else if (!($('#css').is(':visible'))){
+                $('#css').show();
+                panels++;
+                $('#hidden-p').hide();
+            }
+            $('.display').width(Math.floor(1000/panels));
+            if (panels < 1){
+                $('#hidden-p').show();
+            }
+            alert($('.display').width());
+        });
+
+        //js button/panel interaction
+        $('#js-button').click(function(){
+            if ($('#js').is(':visible')){
+                $('#js').hide();
+                panels--;
+            } else if (!($('#js').is(':visible'))){
+                $('#js').show();
+                panels++;
+                $('#hidden-p').hide();
+            }
+            $('.display').width(Math.floor(1000/panels));
+            if (panels < 1){
+                $('#hidden-p').show();
+            }
+            alert($('.display').width());
+        });
+
+        //output button/panel interaction
+        $('#output-button').click(function(){
+            if ($('#output').is(':visible')){
+                $('#output').hide();
+                panels--;
+            } else if (!($('#output').is(':visible'))){
+                $('#output').show();
+                panels++;
+                $('#hidden-p').hide();
+            }
+            $('.display').width(Math.floor(1000/panels));
+            if (panels < 1){
+                $('#hidden-p').show();
+            }
+            alert($('.display').width());
+        });
+
 
 
 
