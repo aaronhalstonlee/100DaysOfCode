@@ -10,26 +10,21 @@
     
 </head>
 <body>
-    <div id="topbar">
-        <div id="topbar-title">
-            <p>codePlayer!</p>
+    <div id="container">
+        <div id="logo">codePlayer!</div>
+        <div id="button-container">
+            <button id="html" class="buttons select">html</button>
+            <button id="css" class="buttons">css</button>
+            <button id="js" class="buttons">javascript</button>
+            <button id="output" class="buttons select">output</button>
         </div>
     </div>
-    <div id="buttons">
-        <button id="html-button">html</button>
-        <button id="css-button">css</button>
-        <button id="js-button">javascript</button>
-        <button id="output-button">output</button>
-    </div>
     <div class="clear-float"></div>
-    <div id="border">
-        <div class="display" id="html"></div>
-        <div class="display" id="css"></div>
-        <div class="display" id="js"></div>
-        <div class="display" id="output"></div>
-        <p id="hidden-p">hey! get back to coding!</p>
-    </div>
-
+    
+    <textarea class="panel" id="html-panel" type="text"></textarea>
+    <textarea class="panel" id="css-panel" type="text"></textarea>
+    <textarea class="panel" id="js-panel" type="text"></textarea>
+    <iframe class="panel" id="output-panel" src=""></iframe>
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>

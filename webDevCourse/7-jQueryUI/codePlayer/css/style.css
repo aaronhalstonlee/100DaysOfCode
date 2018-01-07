@@ -1,63 +1,116 @@
-#topbar {
-    height: 60px;
-    width: 501px;
-    background-color: rgb(204, 204, 204);
-    float: left;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+body {
+  font-family: helvetica;
 }
-#topbar-title {
-    width: 50%;
-    float: left;
-}
-#topbar-title p {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 220%;
-    position: relative;
-    bottom: 27px;
-    
-}
-#buttons {
-    background-color: rgb(204, 204, 204);
-    height: 60px;
-    width: 501px;
-    float: left;
-    position: relative;
+#container {
+  width: 100%;
+  background-color: lightgray;
+  height: 31px;
+  padding 5px;
 }
 
-button {
-    position: relative;
-    top: 17px;
-    float: right;
-    font-size: 110%;
+#logo {
+  float: left;
+  font-weigth: bold;
+  font-size: 150%;
+  padding: 3px 3px;
 }
 
-.clear-float {
-    clear: both;
+#button-container {
+  width: 230px;
+  margin: 0 auto;
 }
-.display {
-    width: 250px;
-    height: 700px;
-    float: left;
-    overflow: scroll;
-}
-#hidden-p {
-    display: none;
+
+.buttons {
+  float: left;
+  border-right: none;
+  padding: 6px;
+  border: 1px solid gray;
+  font-size: 90%;
+  user-select: none;
 }
 
 #html {
-    background-color: lightgray;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
-#css {
-    background-color: lightblue;
+#output {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
-#js {
-    background-color: lightcyan;
+.select {
+  background-color: lightblue;
 }
-#border {
-    width: 1000px;
-    height: 700px;
-    border: 1px solid black;
+
+.highlight {
+  background-color: gray;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.panel {
+  resize: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  float: left;
+  height: 675px;
+  width: 400px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#css-panel {
+  display: none;
+}
+
+#js-panel {
+  display: none;
 }
